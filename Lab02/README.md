@@ -20,9 +20,16 @@ Do weryfikacji działania zapisanego modelu utworzono skrypt `predict.py`. Model
 
 Do testu wykorzystano 10 pierwszych próbek ze zbioru danych. Wynik działania skryptu:
 
-**Prawdziwe etykiety:** [0 0 0 0 0 0 0 0 0 0]
-**Przewidywane etykiety:** [0 0 0 0 0 0 0 0 0 0]
-**Prawdopodobieństwa klas:** 
+**Prawdziwe etykiety:** 
+
+[0 0 0 0 0 0 0 0 0 0]
+
+**Przewidywane etykiety:**
+
+[0 0 0 0 0 0 0 0 0 0]
+
+**Prawdopodobieństwa klas:**
+
 [[9.96345639e-01 3.65434051e-03]
  [9.99331415e-01 6.68606430e-04]
  [9.99892235e-01 1.07775224e-04]

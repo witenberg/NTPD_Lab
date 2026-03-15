@@ -26,9 +26,9 @@ for estimators in n_estimators:
         for lr in learning_rates:
             with mlflow.start_run():
                 model = XGBClassifier(
-                    n_estimators=estimators, 
-                    max_depth=max_depth, 
-                    learning_rate=lr, 
+                    n_estimators=estimators,
+                    max_depth=max_depth,
+                    learning_rate=lr,
                     objective=objective
                 )
 

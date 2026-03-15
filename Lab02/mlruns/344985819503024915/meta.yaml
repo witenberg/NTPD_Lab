@@ -1,7 +1,0 @@
-artifact_location: file:C:/NTPD/Lab02/mlruns/344985819503024915
-creation_time: 1773600182197
-experiment_id: '344985819503024915'
-last_update_time: 1773600182197
-lifecycle_stage: active
-name: Lab02_XGBoost_Hiperparametry
-workspace: default
