@@ -1,0 +1,14 @@
+artifact_uri: file:C:/NTPD/Lab02/mlruns/516780763643623914/c1ccbc8056b445948b06721e65a02193/artifacts
+end_time: 1773600784506
+entry_point_name: ''
+experiment_id: '516780763643623914'
+lifecycle_stage: active
+run_id: c1ccbc8056b445948b06721e65a02193
+run_name: useful-conch-636
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773600771962
+status: 3
+tags: []
+user_id: witenberg

@@ -1,0 +1,14 @@
+artifact_uri: file:C:/NTPD/Lab02/mlruns/344985819503024915/a72ab24fdc8c4cccaa2e12aec8bfa770/artifacts
+end_time: 1773600196644
+entry_point_name: ''
+experiment_id: '344985819503024915'
+lifecycle_stage: active
+run_id: a72ab24fdc8c4cccaa2e12aec8bfa770
+run_name: skittish-lamb-863
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773600182803
+status: 3
+tags: []
+user_id: witenberg

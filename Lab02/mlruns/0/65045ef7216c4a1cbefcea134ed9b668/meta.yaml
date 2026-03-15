@@ -1,0 +1,14 @@
+artifact_uri: file:C:/NTPD/Lab02/mlruns/0/65045ef7216c4a1cbefcea134ed9b668/artifacts
+end_time: 1773597141596
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 65045ef7216c4a1cbefcea134ed9b668
+run_name: luxuriant-bug-37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773597128656
+status: 3
+tags: []
+user_id: witenberg

@@ -1,0 +1,14 @@
+artifact_uri: file:C:/NTPD/Lab02/mlruns/344985819503024915/b3aa3f985c7a4647849cf1f5340f1f0f/artifacts
+end_time: 1773600255436
+entry_point_name: ''
+experiment_id: '344985819503024915'
+lifecycle_stage: active
+run_id: b3aa3f985c7a4647849cf1f5340f1f0f
+run_name: whimsical-pug-999
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773600246039
+status: 3
+tags: []
+user_id: witenberg

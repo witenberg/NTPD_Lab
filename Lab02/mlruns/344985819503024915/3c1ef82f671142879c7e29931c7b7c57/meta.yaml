@@ -1,0 +1,14 @@
+artifact_uri: file:C:/NTPD/Lab02/mlruns/344985819503024915/3c1ef82f671142879c7e29931c7b7c57/artifacts
+end_time: 1773600204749
+entry_point_name: ''
+experiment_id: '344985819503024915'
+lifecycle_stage: active
+run_id: 3c1ef82f671142879c7e29931c7b7c57
+run_name: powerful-ox-766
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773600196677
+status: 3
+tags: []
+user_id: witenberg

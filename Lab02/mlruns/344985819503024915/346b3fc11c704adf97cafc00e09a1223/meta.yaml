@@ -1,0 +1,14 @@
+artifact_uri: file:C:/NTPD/Lab02/mlruns/344985819503024915/346b3fc11c704adf97cafc00e09a1223/artifacts
+end_time: 1773600212647
+entry_point_name: ''
+experiment_id: '344985819503024915'
+lifecycle_stage: active
+run_id: 346b3fc11c704adf97cafc00e09a1223
+run_name: rebellious-mare-315
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773600204768
+status: 3
+tags: []
+user_id: witenberg

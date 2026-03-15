@@ -1,0 +1,14 @@
+artifact_uri: file:C:/NTPD/Lab02/mlruns/0/70930ec7efde4f7f837ee30dcba5b60c/artifacts
+end_time: 1773596441881
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 70930ec7efde4f7f837ee30dcba5b60c
+run_name: abundant-kite-239
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773596431315
+status: 3
+tags: []
+user_id: witenberg

@@ -1,0 +1,10 @@
+artifact_location: file:C:/NTPD/Lab02/mlruns/516780763643623914/models/m-e1a44e91a67b4f1d8c4b453a3022697a/artifacts
+creation_timestamp: 1773600821195
+experiment_id: '516780763643623914'
+last_updated_timestamp: 1773600829971
+model_id: m-e1a44e91a67b4f1d8c4b453a3022697a
+model_type: null
+name: model
+source_run_id: c0cae79561c54c12a7295468bd8f85a2
+status: 2
+status_message: null

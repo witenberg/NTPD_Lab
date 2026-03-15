@@ -1,0 +1,14 @@
+artifact_uri: file:C:/NTPD/Lab02/mlruns/344985819503024915/d278331eca0f4d7f8dc3ef55a419e3a0/artifacts
+end_time: 1773600246010
+entry_point_name: ''
+experiment_id: '344985819503024915'
+lifecycle_stage: active
+run_id: d278331eca0f4d7f8dc3ef55a419e3a0
+run_name: secretive-cub-90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773600237357
+status: 3
+tags: []
+user_id: witenberg
