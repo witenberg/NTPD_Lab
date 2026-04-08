@@ -3,10 +3,6 @@ from pydantic import BaseModel, ValidationError
 from sklearn.datasets import load_wine
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
-import os
-
-APP_ENV = os.getenv("ENVIRONMENT", "development")
-APP_VERSION = os.getenv("MODEL_VERSION", "1.0.0-local")
 
 # Trenowanie modelu
 wine_data = load_wine()
@@ -22,7 +18,7 @@ model.fit(X_train, y_train)
 app = FastAPI(
     title="Laboratorium 03",
     description="API do serwowania modelu klasyfikacji gatunków wina",
-    version=APP_VERSION
+    version="1.0.0"
 )
 
 # Klasa do walidacji danych wejściowych 
@@ -61,7 +57,6 @@ def predict(data: WinePredictionInput):
 @app.get("/info")
 def get_info():
     return {
-        "environment": APP_ENV,
         "model_type": type(model).__name__,
         "features_count": model.n_features_in_,
         "feature_names": ["alcohol", "malic_acid", "ash", "alcalinity_of_ash"],
