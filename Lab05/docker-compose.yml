@@ -1,0 +1,25 @@
+services:
+  lab04-api:
+    build: .
+    container_name: lab04_api
+    ports:
+      - "8000:8000"
+    networks:
+      - lab04-network
+    environment:
+      - ENVIRONMENT=production
+      - MODEL_VERSION=1.1.0
+    depends_on:
+      - redis-db
+
+  redis-db:
+    image: "redis:alpine"
+    container_name: lab04_redis_db
+    ports:
+      - "6379:6379"
+    networks:
+      - lab04-network
+
+networks:
+  lab04-network:
+    driver: bridge
