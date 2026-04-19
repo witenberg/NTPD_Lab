@@ -1,0 +1,64 @@
+name: ML CI/CD Pipeline (Lab06)
+
+on:
+  push:
+    branches: [ "main" ]
+    # Uruchom tylko, gdy są zmiany w folderze Lab06 lub w samym pliku workflow
+    paths:
+      - 'Lab06/**'
+      - '.github/workflows/**'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - 'Lab06/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    # Domyślny folder roboczy dla wszystkich poleceń 'run' w tym zadaniu
+    defaults:
+      run:
+        working-directory: ./Lab06
+    steps:
+    - name: Pobranie kodu repozytorium
+      uses: actions/checkout@v3
+
+    - name: Konfiguracja środowiska Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.13"
+
+    - name: Instalacja zależności
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Uruchomienie testów jednostkowych
+      run: |
+        pytest test_model.py
+
+  build-and-publish:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    permissions:
+      contents: read
+      packages: write
+    steps:
+    - name: Pobranie kodu repozytorium
+      uses: actions/checkout@v3
+
+    - name: Logowanie do GitHub Container Registry
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Budowanie i publikacja obrazu Docker
+      uses: docker/build-push-action@v4
+      with:
+        # Ścieżka do folderu z Dockerfile
+        context: ./Lab06
+        push: true
+        tags: ghcr.io/${{ github.repository_owner }}/ml-app-lab06:latest
