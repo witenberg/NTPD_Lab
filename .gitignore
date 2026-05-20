@@ -1,2 +1,13 @@
-*/.venv
-*/__pycache__/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+
+# macOS
+.DS_Store
+
+# Lab08 — modele z pipeline (CSV i DAG zostają w repo)
+Lab08/models/**/*.pkl
